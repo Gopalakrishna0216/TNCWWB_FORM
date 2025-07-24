@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="IService\NewFolder\**" />
+	  <Compile Remove="Models\NewFolder1\**" />
+	  <Compile Remove="Models\NewFolder\**" />
+	  <Content Remove="IService\NewFolder\**" />
+	  <Content Remove="Models\NewFolder1\**" />
+	  <Content Remove="Models\NewFolder\**" />
+	  <EmbeddedResource Remove="IService\NewFolder\**" />
+	  <EmbeddedResource Remove="Models\NewFolder1\**" />
+	  <EmbeddedResource Remove="Models\NewFolder\**" />
+	  <None Remove="IService\NewFolder\**" />
+	  <None Remove="Models\NewFolder1\**" />
+	  <None Remove="Models\NewFolder\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Dapper" Version="2.1.66" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+		<PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+	</ItemGroup>
+
+</Project>

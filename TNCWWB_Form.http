@@ -1,0 +1,6 @@
+@TNCWWB_Form_HostAddress = http://localhost:5214
+
+GET {{TNCWWB_Form_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
